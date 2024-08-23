@@ -14,7 +14,8 @@ body {
     url('./assets/img/body.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(0.8rem);
+  color: white;
 }
 
 ul {
@@ -54,6 +55,13 @@ img {
     background-color: rgb(145, 77, 61);
     color: white;
   }
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 /* * ---- Navbar ---- */
@@ -110,6 +118,7 @@ nav ul a {
   font-weight: bold;
   text-decoration: underline;
 }
+
 .hero-text .btn {
   margin-top: 1rem;
 }
@@ -119,6 +128,41 @@ nav ul a {
 }
 
 /* * ---- Coffee ---- */
+.container.coffees{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 6rem 3rem;
+}
+
+.coffee-card {
+  background:
+    linear-gradient(to left, rgba(65, 45, 45, 0.7), rgba(70, 53, 53, 0.47)),
+    url('./assets/img/coffee-card.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  border-radius: 2px;
+}
+
+.coffee-card img {
+  padding: 1rem;
+  transform: translateY(-30%);
+}
+
+.coffee-card .detail {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-20%);
+}
+
+.coffee-card h4 {
+  font-weight: normal;
+}
+
+
 /* * ---- Cold Cofeee ---- */
 /* * ---- Beans ---- */
 /* * ---- Contact ---- */
