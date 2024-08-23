@@ -123,6 +123,11 @@ nav ul a {
 
 .hero-img {
   width: 35rem;
+  transition: .5s;
+}
+
+.hero-img:hover {
+  transform: scale(1.01);
 }
 
 /* * ---- Coffee ---- */
