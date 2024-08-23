@@ -11,7 +11,7 @@
 body {
   background:
     linear-gradient(to left, rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.47)),
-    url('./assets/img/coffee.jpg');
+    url('./assets/img/body.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(1rem);
@@ -40,6 +40,22 @@ img {
   display: flex;
 }
 
+.btn {
+  background-color: white;
+  color: rgb(145, 77, 61);
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: 0.1s;
+  width: max-content;
+  font-weight: bold !important;
+
+  &:hover {
+    background-color: rgb(145, 77, 61);
+    color: white;
+  }
+}
+
 /* * ---- Navbar ---- */
 nav {
   justify-content: space-between;
@@ -64,13 +80,15 @@ nav ul a {
   box-shadow: 0 0 1px 0 white;
   cursor: pointer;
   color: white;
+  transition: 0.1s;
 
   &:hover,
   &.active {
-    background-color: white;
-    color: brown;
+    outline: 1px solid white;
   }
 }
+
+/* * ---- Hero ---- */
 /* * ---- Coffee ---- */
 /* * ---- Cold Cofeee ---- */
 /* * ---- Beans ---- */
