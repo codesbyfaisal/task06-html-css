@@ -173,7 +173,8 @@ nav ul a {
 }
 
 /* * ---- Cold Cofeee ---- */
-.cold-coffees {
+.cold-coffees,
+.beans {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   gap: 6rem 3rem;
@@ -196,10 +197,6 @@ nav ul a {
 
 /* * ---- Beans ---- */
 .beans {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
-  gap: 6rem 5rem;
-  margin-top: 6rem;
   margin-bottom: 9rem;
 }
 
