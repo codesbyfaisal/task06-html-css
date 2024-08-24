@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Chakra Petch", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,23 @@ a {
 img {
   width: 100%;
   object-fit: cover;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  padding-left: 0;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #eeeeeec4;
+  color: white;
+  margin-bottom: 0.5rem;
+
+  &::placeholder {
+    color: #eeeeeec4;
+  }
 }
 
 /* * ---- Modules ---- */
@@ -226,6 +244,57 @@ nav ul a {
 
 /* * ---- Contact ---- */
 /* * ---- Footer ---- */
-footer{
-  
+footer {
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+.footer-about {
+  flex-basis: 30%;
+}
+
+footer h1,
+footer .logo {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+footer .logo {
+  text-decoration: underline;
+}
+
+footer .socials a {
+  width: 2rem;
+  display: block;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  transition: 0.1s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+
+.quick-links a {
+  color: #eeeeeec4;
+  margin-bottom: 0.5rem;
+  display: block;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.footer-contact {
+  flex-basis: 30%;
+}
+
+.copyright {
+  padding: 1rem 0;
+  border-top: 1px solid #eeeeeea6;
+  min-width: 100%;
+  text-align: center;
+}
+
+/* * ---- Media Queries ---- */
