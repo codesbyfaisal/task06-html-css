@@ -11,7 +11,7 @@
 
 body {
   background:
-    linear-gradient(to left, rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.47)),
+    linear-gradient(120deg, rgba(128, 128, 128, 0.7), rgba(128, 128, 128, 0.47)),
     url('./assets/img/body.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,6 +44,7 @@ textarea {
   border-bottom: 1px solid #eeeeeec4;
   color: white;
   margin-bottom: 0.5rem;
+  resize: none;
 
   &::placeholder {
     color: #eeeeeec4;
@@ -157,10 +158,11 @@ nav {
 /* * ---- Coffee ---- */
 .container.coffees {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 0.7fr));
   gap: 6rem 3rem;
   margin-top: 6rem;
   margin-bottom: 9rem;
+  justify-content: center;
 }
 
 .coffee-card {
@@ -197,31 +199,44 @@ nav {
 }
 
 /* * ---- Cold Cofeee ---- */
-.cold-coffees,
-.beans {
+.cold-coffees {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-  gap: 6rem 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 0.7fr));
+  gap: 3rem;
   margin-top: 3rem;
   margin-bottom: 6rem;
+  justify-content: center;
 }
 
 .cold-coffee-card {
   background-color: white;
   text-align: center;
-  padding: 0.2rem;
+  padding: 2px;
   border-radius: 2px;
   color: #433031;
+  height: 20rem;
 }
 
 .cold-coffee-card img {
+  object-fit: contain;
+  height: 88%;
   padding: 1rem;
   background-color: #433031ee;
 }
 
+.cold-coffee-card h1 {
+  height: 10%;
+}
+
 /* * ---- Beans ---- */
 .beans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 0.5fr));
+  gap: 6rem 3rem;
+  margin-top: 5rem;
   margin-bottom: 9rem;
+  justify-content: center;
+
 }
 
 .bean-card {
@@ -276,7 +291,6 @@ footer .socials a {
     transform: scale(1.05);
   }
 }
-
 
 .quick-links a {
   color: #eeeeeec4;
