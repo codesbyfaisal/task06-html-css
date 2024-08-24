@@ -298,3 +298,23 @@ footer .socials a {
 }
 
 /* * ---- Media Queries ---- */
+@media (width<788px) {
+  .footer-about {
+    flex-basis: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-contact {
+    flex-basis: 70%;
+  }
+
+  section:last-child{
+    padding: 3rem !important;
+  }
+}
+
+@media (width<500px) {
+  footer > div {
+    flex-basis: 100% !important;
+  }
+}
