@@ -313,6 +313,18 @@ footer .socials a {
   }
 }
 
+@media screen and (max-width:900px) {
+  .hero {
+    height: max-content;
+    flex-direction: column-reverse;
+    margin-bottom: 10rem;
+  }
+
+  .hero-img {
+    width: 28rem;
+  }
+}
+
 @media screen and (max-width:788px) {
   html {
     font-size: 95%;
@@ -392,5 +404,9 @@ footer .socials a {
 
   footer>div {
     flex-basis: 100% !important;
+  }
+
+  .hero-img {
+    width: 22rem;
   }
 }
