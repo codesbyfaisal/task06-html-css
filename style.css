@@ -43,7 +43,7 @@ img {
 
 .btn {
   background-color: white;
-  color: rgb(145, 77, 61);
+  color: #433031;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   font-weight: 600;
@@ -52,7 +52,7 @@ img {
   font-weight: bold !important;
 
   &:hover {
-    background-color: rgb(145, 77, 61);
+    background-color: #433031;
     color: white;
   }
 }
@@ -90,7 +90,7 @@ nav ul a {
 
   &:hover,
   &.active {
-    outline: 1px solid white;
+    outline: 1px solid #433031;
   }
 }
 
@@ -141,7 +141,7 @@ nav ul a {
 
 .coffee-card {
   background:
-    linear-gradient(to left, rgba(65, 45, 45, 0.7), rgba(70, 53, 53, 0.47)),
+    linear-gradient(to left, #433031c0, #433031b4),
     url('./assets/img/coffee-card.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,7 +152,12 @@ nav ul a {
 
 .coffee-card img {
   padding: 1rem;
+  transition: 0.2s;
   transform: translateY(-30%);
+}
+
+.coffee-card:hover>img {
+  transform: translateY(-30%) scale(1.05);
 }
 
 .coffee-card .detail {
@@ -178,14 +183,14 @@ nav ul a {
 .cold-coffee-card {
   background-color: white;
   text-align: center;
-  color: rgb(145, 77, 61);
   padding: 0.2rem;
   border-radius: 2px;
+  color: #433031;
 }
 
 .cold-coffee-card img {
   padding: 1rem;
-  background-color: rgb(145, 76, 61);
+  background-color: #433031ee;
 }
 
 /* * ---- Beans ---- */
