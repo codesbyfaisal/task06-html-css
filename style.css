@@ -178,6 +178,7 @@ nav ul a {
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   gap: 6rem 3rem;
   margin-top: 3rem;
+  margin-bottom: 6rem;
 }
 
 .cold-coffee-card {
@@ -194,5 +195,37 @@ nav ul a {
 }
 
 /* * ---- Beans ---- */
+.beans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 6rem 5rem;
+  margin-top: 6rem;
+  margin-bottom: 9rem;
+}
+
+.bean-card {
+  background-color: transparent;
+  text-align: center;
+  padding: 1rem 0.2rem;
+  border-radius: 2px;
+  box-shadow: 0 0 0.5rem 0 #4330319a;
+  position: relative;
+  color: white;
+}
+
+.bean-card img {
+  transition: 0.2s;
+  width: 10rem;
+  transform: translateY(-40%);
+}
+
+.bean-card .detail {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-20%);
+}
+
 /* * ---- Contact ---- */
 /* * ---- Footer ---- */
